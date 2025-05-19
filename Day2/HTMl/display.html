@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Result</title>
+</head>
+
+<body>
+    <h2>Form Submitted</h2>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        document.write("<ul>");
+        for (const [key, value] of params.entries()) {
+            document.write(`<li><b>${key}</b>: ${value}</li>`);
+        }
+        document.write("</ul>");
+    </script>
+</body>
+
+</html>

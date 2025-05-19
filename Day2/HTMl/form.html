@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="background-color:beige;">
+    <H1 style="background-color: purple;color: white;"><b>Creating a Form</b></H1>
+    <fieldset>
+        <legend>iframe(Inline Frame) implementation</legend>
+        <iframe src="https://www.example.com" name="myframe" width="600" height="400">
+        </iframe>
+        <form action="display.html" target="myframe" method="get">
+    </fieldset>
+    <div style="background-color:bisque;">
+        <fieldset>
+            <legend>text type</legend>
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="fname" value="Avinash">
+            <br>
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lname" value="Yadav">
+        </fieldset>
+    </div>
+    <br>
+
+    <div style="background-color: azure;">
+        <fieldset>
+            <legend>radio Type</legend>
+            <p>Choose Subject</p>
+            <input type="radio" id="html" name="subject" value="HTML">
+            <label for="html">HTML</label>
+            <br>
+            <input type="radio" id="css" name="subject" value="CSS">
+            <label for="css">CSS</label><br>
+            <input type="radio" id="javascript" name="subject" value="JavaScript">
+            <label for="javascript">JavaScript</label><br>
+            <input type="radio" id="typescript" name="subject" value="TypeScript">
+            <label for="typescript">TypeScript</label>
+        </fieldset>
+    </div>
+    <br>
+
+    <fieldset>
+        <legend>checkbox Type</legend>
+        <section style="background-color: cadetblue;">Choose Skills
+            <br>
+            <input type="checkbox" id="Frontend" name="skills" value="Frontend">
+            <label for="Frontend">Frontend</label>
+            <br>
+            <input type="checkbox" id="backend" name="skills" value="Backend">
+            <label for="backend">Backedn</label>
+            <br>
+            <input type="checkbox" id="fullstack" name="skills" value="Full Stack">
+            <label for="fullstack">Full Stack</label>
+            <br>
+            <input type="checkbox" id="AI" name="skills" value="AI-ML">
+            <label for="AI">Artifical Intelligence</label>
+            <br>
+            <input type="checkbox" id="CyberSecurity" name="skills" value="CyberSecurity">
+            <label for="CyberSecurity">CyberSecurity</label>
+        </section>
+    </fieldset>
+    <br>
+
+    <fieldset>
+        <legend>select & option</legend>
+        <section style="background-color: bisque;">
+            <label for="fruits">Choose Fruits</label>
+            <select id="fruits" name="fruits">
+                <option value="Mango">Mango</option>
+                <option value="Apple">Apple</option>
+                <option value="PineApple">PineApple</option>
+
+            </select></section>
+    </fieldset>
+    <br>
+
+    <fieldset>
+        <legend>textArea</legend>
+        <textarea name="message" rows="10" cols="30"></textarea>
+    </fieldset>
+
+    <br>
+    <fieldset>
+        <legend>dataList</legend>
+        <input list="Branch" name="Branch">
+        <datalist id="Branch">
+            <option value="CSE"></option>
+            <option value="ECE"></option>
+            <option value="EEE"></option>
+            <option value="Mechanical"></option>
+        </datalist>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>password</legend>
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username">
+        <br>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password">
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>
+            <label for="favColor">Choose Color</label>
+            <input type="color" id="favColor" name=""> </legend>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>submit</legend>
+        <input type="submit" onclick="alert('Form Submitted to iframe Section ') " name="submit">
+        <button type="button" onclick="alert('Submitting form')">Submit Form</button>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>
+            <input type="reset" value="reset">
+        </legend>
+    </fieldset>
+    </form>
+
+
+
+</html>

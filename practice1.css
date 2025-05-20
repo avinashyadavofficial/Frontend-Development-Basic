@@ -1,0 +1,23 @@
+/* universal selector */
+*{
+    color: yellow;
+}
+h1{
+    color: red;
+}
+/* id selector */
+#id1{
+    color: blue;
+}
+/* class selector */
+.class1{
+    color: green;
+}
+/* element selector */
+p{
+    color: purple;
+}
+/* group selector */
+#first,#second{
+    color: orange;
+}

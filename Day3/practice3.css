@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family:'Times New Roman', Times, serif
+}
+h1{
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration: underline;
+    text-decoration-color: blue;
+    text-decoration-thickness: 2px;
+    text-decoration-style: wavy;
+}
+#outer{
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#inner{
+    font-size: 18px;
+    font-weight: 300;
+    font-style: italic;
+}
+#logo{
+    font-size: 40px;
+    align-items: right;
+}

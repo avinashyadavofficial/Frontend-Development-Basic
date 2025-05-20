@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#id1{
+    height: 200px;
+    width: 200px;
+    
+}
+#button{
+    height: 200px;
+    width: 200px;
+    padding:10px 15px 10px 15px;
+    margin: 100px;
+    border-color: red;
+    border-radius: 100px;
+    border-style: dotted;
+    border-width: 5px;
+
+
+}
+.box{
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 5px;
+    text-align: center;
+    padding: 10px
+}
+#id2{
+    margin: 30px;
+    box-sizing: border-box;
+}
+#id3{
+    margin: 40px;
+    box-sizing: content-box;
+}

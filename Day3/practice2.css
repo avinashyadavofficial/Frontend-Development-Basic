@@ -1,0 +1,24 @@
+#bar{
+    color: salmon;
+    background-color: midnightblue;
+    opacity: 0.7;
+
+}
+main{
+    background-color: lightblue;
+    height: 500px;
+    width: auto;
+}
+#bar1{ 
+    height: 100px;
+    width: 800px;
+    /* background-color: lightgreen;
+    background-image: url(ge.gif);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat; */
+    /*shorthand */
+    background: green url(ge.gif) no-repeat  center;
+
+
+}

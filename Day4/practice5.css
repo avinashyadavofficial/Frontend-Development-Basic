@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#id1{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    border-radius: 50%;
+}
+.c1{
+    width: 100px;
+    height: 100px;
+    display: inline-block; 
+    background-color: red;
+    position: static;
+}
+#id2{
+    z-index: 1;
+    position: relative;
+    top: 200px;
+    left:150px;
+    
+}
+#id3{
+    position: absolute;
+   
+    top:200px;
+    left:300px  
+}
+#id4{
+    position: fixed;
+    z-index: 2;
+}
+nav{
+    position:fixed;
+    right:10px
+}
+nav a{
+    display: inline-block;
+    text-decoration: none;
+    background-color:aquamarine;
+    padding: 10px;
+}

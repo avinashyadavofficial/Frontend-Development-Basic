@@ -1,0 +1,31 @@
+
+#progress_container{
+    width:90%;
+    height: 40px;
+    background-color:aquamarine;
+    border-radius: 5px; 
+    border:2px solid black;
+    position: relative;
+    left: 4%;
+}
+#progress_bar{
+    background-color: red;
+    height: 100%;
+    border-radius: 5px;
+    animation: animate_progress 7s ease-in 5s 2 ;
+}
+@keyframes animate_progress{
+    0%{
+        width: 0%;
+    }
+    90%{
+        width: 95%;
+    }
+    95%{
+        width: 60%;
+    }
+    100%{
+        width: 100%;
+    }
+    
+}

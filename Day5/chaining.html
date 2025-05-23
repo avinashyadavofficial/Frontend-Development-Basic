@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    $(document).ready(function(){
+        $("#box")
+            .slideUp(3000)
+            .slideDown(3000)
+            .css("background-color", "yellow")
+            .append("<p>Chaining Example Completed!</p>");
+
+    });
+    </script>
+</head>
+<body>
+    <h1>Chaining</h1>
+    <div id="box">
+        <p>Chaining is a technique </p>
+    </div>
+</body>
+</html>

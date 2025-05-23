@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Two-Way Binding Simulation</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+  <input type="text" id="name" placeholder="Enter your name">
+  <p id="greet">Hello!</p>
+  <button id="update">Reset Name</button>
+
+</body>
+<script>
+    let myName = "";
+    $("#name").on("input", function() {
+      myName = $(this).val();
+      $("#greet").text("Hello, " + myName );
+    });    
+    $("#update").click(function() {
+      myName = "Guest";
+      $("#name").val(myName);  
+      $("#greet").text("Hello, " + myName );
+    });
+  </script>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <title>Data Binding Example</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+
+
+  <input type="text" id="username" placeholder="Type your name" name="username" >
+
+  <p>Hello, <span id="output"></span>!</p>
+
+
+
+</body>
+  <script>
+    $(document).ready(function() {
+      $("#username").on("input", function() {
+        let val = $(this).val();
+        $("#output").text(val);
+       });
+
+    });
+  </script>
+</html>

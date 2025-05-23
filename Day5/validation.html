@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+  <title>Form Validation</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+
+  <form id="myForm">
+    <label for="name">Name: </label>
+    <input type="text" id="name"><br><br>
+
+    <label for="email">Email: </label>
+    <input type="text" id="email"><br><br>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <p id="message" style="color: red;"></p>
+
+  <script>
+    $("#myForm").submit(function(event) {
+      event.preventDefault();
+      let name = $("#name").val();
+      let email = $("#email").val();
+      if (name === "") {
+        $("#message").text("Name is required!");
+        return; 
+      }
+      if (email === "") {
+        $("#message").text("Email is required!");
+        return;
+      }
+      let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailPattern.test(email)) {
+        $("#message").text("Enter a valid email address!");
+        return;
+      }
+      $("#message").css("color", "green").text("Form submitted successfully");
+
+    });
+  </script>
+
+</body>
+</html>
